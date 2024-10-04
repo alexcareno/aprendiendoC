@@ -27,9 +27,8 @@ int main()
     if (num1 > num2){
         printf("%i", num1);
     } else {
-        printf("%i", num2);
+      printf("%i", num2);
     }
     getch();
     return 0;
 }
-
