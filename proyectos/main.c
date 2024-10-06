@@ -19,13 +19,18 @@
 
 int main()
 {
-    int num1;
-    printf("Digite un n%cmero: ", 163);
-    scanf("%i", &num1);
-    if(num1 > 9) {
-        printf("El n%cmero tiene dos digitos", 163);
+    int preguntas = 10, contestadasOK = 4;
+
+    int porcentaje = contestadasOK * 100 / preguntas;
+
+    if(porcentaje >= 90) {
+        printf("Nivel maximo");
+    } else if (porcentaje >= 75 && porcentaje < 90) {
+        printf("Nivel medio");
+    } else if (porcentaje >= 50 && porcentaje < 75) {
+        printf("Nivel regular");
     } else {
-        printf("El n%cmero tiene un digito", 163);
+        printf("Fuera de nivel");
     }
     getch();
     return 0;
