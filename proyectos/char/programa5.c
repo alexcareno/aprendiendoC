@@ -17,8 +17,8 @@
 ==================================
  */
 
-int main() {
-
+int main()
+{
 
     int edad1, edad2;
     char sexo1, sexo2;
@@ -42,7 +42,7 @@ int main() {
         }
     } else {
         printf("La edad mayor es %i \n: ", edad2);
-        if(sexo2 == 'm') {
+        if(sexo1 == 'm') {
             printf("Sexo masulino");
         } else {
             printf("Sexo femenino");
